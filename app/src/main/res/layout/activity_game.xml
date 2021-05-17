@@ -21,7 +21,7 @@ tools:context="com.OCR.Laz.TopQuiz.GameActivity">
     android:textStyle="bold"
     android:gravity="center"
     android:text="Question?"
-    ></TextView>
+    />
 
 <Button
     android:id="@+id/activity_game_answer1_btn"
