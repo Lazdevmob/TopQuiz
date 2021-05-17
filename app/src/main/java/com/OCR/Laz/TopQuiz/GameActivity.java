@@ -27,6 +27,7 @@ public class GameActivity extends AppCompatActivity {
         mAnswer4 = (Button) findViewById(R.id.activity_game_answer4_btn);
 
         /**
+         *
         mAnswer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
