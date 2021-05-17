@@ -12,7 +12,7 @@ tools:context="com.OCR.Laz.TopQuiz.GameActivity">
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="2"
-    android:textColor="@color/design_default_color_primary"
+    android:textColor="@color/purple_200"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
     android:layout_marginStart="15dp"
@@ -29,47 +29,45 @@ tools:context="com.OCR.Laz.TopQuiz.GameActivity">
     android:layout_height="0dp"
     android:layout_margin="5dp"
     android:layout_weight="1"
-    android:textColor="@android:color/black"
-    android:background="@android:color/white"
+    android:textColor="@color/Primary"
+    android:background="@color/white"
     android:textSize="20sp"
     android:text="Answer1"
     />
 
-<Button
-    android:id="@+id/activity_game_answer2_btn"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_margin="5dp"
-    android:layout_weight="1"
-    android:textColor="@android:color/black"
-    android:background="@android:color/white"
-    android:textSize="20sp"
-    android:text="Answer2"
-    />
+    <Button
+        android:id="@+id/activity_game_answer2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:textColor="@color/Primary"
+        android:textSize="20sp"
+        android:text="Answer2"/>
 
-<Button
+    <Button
     android:id="@+id/activity_game_answer3_btn"
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_margin="5dp"
     android:layout_weight="1"
-    android:textColor="@android:color/black"
+    android:textColor="@color/Primary"
     android:background="@android:color/white"
     android:textSize="20sp"
     android:text="Answer3"
     />
 
-<Button
+    <Button
     android:id="@+id/activity_game_answer4_btn"
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_margin="5dp"
     android:layout_weight="1"
-    android:textColor="@android:color/black"
+    android:textColor="@color/Primary"
     android:background="@android:color/white"
     android:textSize="20sp"
     android:text="Answer4"
     />
-
 
 </LinearLayout>
