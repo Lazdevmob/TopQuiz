@@ -1,4 +1,4 @@
-package com.OCR.Laz.TopQuiz;
+package com.OCR.Laz.TopQuiz.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.OCR.Laz.TopQuiz.R;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -26,16 +28,15 @@ public class GameActivity extends AppCompatActivity {
         mAnswer3 = (Button) findViewById(R.id.activity_game_answer3_btn);
         mAnswer4 = (Button) findViewById(R.id.activity_game_answer4_btn);
 
-        /**
-         *
-        mAnswer1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // The user just clicked
-                Intent gamebackActivityIntent = new Intent(GameActivity.this,MainActivity.class);
-                startActivity(gamebackActivityIntent);
-            }
-        });
-*/
+
+     mAnswer1.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             // The user just clicked
+             Intent gameBackActivityIntent = new Intent(GameActivity.this, MainActivity.class);
+             startActivity(gameBackActivityIntent);
+         }
+     });
+
     }
 }

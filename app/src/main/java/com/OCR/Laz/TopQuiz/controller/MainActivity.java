@@ -1,4 +1,4 @@
-package com.OCR.Laz.TopQuiz;
+package com.OCR.Laz.TopQuiz.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,16 +11,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.OCR.Laz.TopQuiz.R;
+import com.OCR.Laz.TopQuiz.model.User;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView mGreetingText;
     private EditText mNameInput;
     private Button mPlayButton;
+    private User mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mUser = new User();
 
         mGreetingText = (TextView) findViewById(R.id.activity_main_greeting_main);
         mNameInput = (EditText) findViewById(R.id.activity_main_name_input);
@@ -49,8 +55,10 @@ public class MainActivity extends AppCompatActivity {
         mPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String firstname = mNameInput.getText().toString();
+                mUser.setFirstName(firstname);
                 // The user just clicked
-                Intent gameActivityIntent = new Intent(MainActivity.this,GameActivity.class);
+                Intent gameActivityIntent = new Intent(MainActivity.this, GameActivity.class);
                 startActivity(gameActivityIntent);
             }
         });
